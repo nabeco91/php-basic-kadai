@@ -6,7 +6,6 @@
 </head>
 
 <body>
-  <p>
     <?php
     class Food {
       private $name;
@@ -22,13 +21,6 @@
       }
     }
 
-    $food = new Food('potato',250);
-    echo $food . '<br>';
-    ?>
-  </p>
-  
-  <p>
-    <?php
     class Animal {
       private $name;
       private $height;
@@ -45,11 +37,19 @@
       }
     }
 
+    $food = new Food('potato',250);
+    print_r ($food);
+    echo '<br>';
+
     $animal = new Animal('dog',60,5000);
-    echo $animal;
+    print_r ($animal);
+
+    echo '<br><br>';
+
+    echo $food->price . '<br>';
+    echo $animal->show_height;
+
     ?>
   </p>
-
-
 </body>
 </html>
