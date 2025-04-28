@@ -17,7 +17,7 @@
       }
 
       public function show_price(){
-        return $this->price;
+        echo $this->price;
       }
     }
 
@@ -33,7 +33,7 @@
       }
 
       public function show_height(){
-        return $this->height;
+        echo $this->height;
       }
     }
 
@@ -46,8 +46,8 @@
 
     echo '<br><br>';
 
-    echo $food->price . '<br>';
-    echo $animal->show_height;
+    $food->show_price;
+    $animal->show_height;
 
     ?>
   </p>
